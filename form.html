@@ -35,24 +35,26 @@
 
       <div>
         <p style="margin:0 0 12px;font-size:14px;font-weight:900;color:#123A7B"><span style="color:#1D5FD2;margin-right:4px">*</span>現在の課題<span style="margin-left:8px;font-size:10px;font-weight:700;color:#fff;background:#1D5FD2;border-radius:4px;padding:2px 7px;vertical-align:2px">必須</span></p>
-        <div style="display:flex;flex-direction:column;gap:8px">
-          <label style="display:flex;align-items:flex-start;gap:10px;border:1.5px solid #D8E6F8;border-radius:10px;padding:13px 14px;cursor:pointer;background:#fff"><input type="checkbox" style="accent-color:#1D5FD2;width:17px;height:17px;margin:1px 0 0;flex-shrink:0"><span style="font-size:13px;font-weight:500;line-height:1.6">商談数（アポ数）が不足している</span></label>
-          <label style="display:flex;align-items:flex-start;gap:10px;border:1.5px solid #D8E6F8;border-radius:10px;padding:13px 14px;cursor:pointer;background:#fff"><input type="checkbox" style="accent-color:#1D5FD2;width:17px;height:17px;margin:1px 0 0;flex-shrink:0"><span style="font-size:13px;font-weight:500;line-height:1.6">商談の質が低く、成約に繋がらない</span></label>
-          <label style="display:flex;align-items:flex-start;gap:10px;border:1.5px solid #D8E6F8;border-radius:10px;padding:13px 14px;cursor:pointer;background:#fff"><input type="checkbox" style="accent-color:#1D5FD2;width:17px;height:17px;margin:1px 0 0;flex-shrink:0"><span style="font-size:13px;font-weight:500;line-height:1.6">決裁者に直接アプローチできていない</span></label>
-          <label style="display:flex;align-items:flex-start;gap:10px;border:1.5px solid #D8E6F8;border-radius:10px;padding:13px 14px;cursor:pointer;background:#fff"><input type="checkbox" style="accent-color:#1D5FD2;width:17px;height:17px;margin:1px 0 0;flex-shrink:0"><span style="font-size:13px;font-weight:500;line-height:1.6">紹介・人脈頼みの営業から抜け出せない</span></label>
-          <label style="display:flex;align-items:flex-start;gap:10px;border:1.5px solid #D8E6F8;border-radius:10px;padding:13px 14px;cursor:pointer;background:#fff"><input type="checkbox" style="accent-color:#1D5FD2;width:17px;height:17px;margin:1px 0 0;flex-shrink:0"><span style="font-size:13px;font-weight:500;line-height:1.6">営業コストを抑えながら新規開拓したい</span></label>
-        </div>
+        <select class="form-select" name="current_issue" required>
+          <option value="" disabled selected>選択してください</option>
+          <option value="商談数（アポ数）が不足している">商談数（アポ数）が不足している</option>
+          <option value="商談の質が低く、成約に繋がらない">商談の質が低く、成約に繋がらない</option>
+          <option value="決裁者に直接アプローチできていない">決裁者に直接アプローチできていない</option>
+          <option value="紹介・人脈頼みの営業から抜け出せない">紹介・人脈頼みの営業から抜け出せない</option>
+          <option value="営業コストを抑えながら新規開拓したい">営業コストを抑えながら新規開拓したい</option>
+        </select>
       </div>
 
       <div>
         <p style="margin:0 0 12px;font-size:14px;font-weight:900;color:#123A7B"><span style="color:#1D5FD2;margin-right:4px">*</span>興味を持ったポイント<span style="margin-left:8px;font-size:10px;font-weight:700;color:#fff;background:#1D5FD2;border-radius:4px;padding:2px 7px;vertical-align:2px">必須</span></p>
-        <div style="display:flex;flex-direction:column;gap:8px">
-          <label style="display:flex;align-items:flex-start;gap:10px;border:1.5px solid #D8E6F8;border-radius:10px;padding:13px 14px;cursor:pointer;background:#fff"><input type="checkbox" style="accent-color:#1D5FD2;width:17px;height:17px;margin:1px 0 0;flex-shrink:0"><span style="font-size:13px;font-weight:500;line-height:1.6">課題・予算がわかった状態で商談できる点</span></label>
-          <label style="display:flex;align-items:flex-start;gap:10px;border:1.5px solid #D8E6F8;border-radius:10px;padding:13px 14px;cursor:pointer;background:#fff"><input type="checkbox" style="accent-color:#1D5FD2;width:17px;height:17px;margin:1px 0 0;flex-shrink:0"><span style="font-size:13px;font-weight:500;line-height:1.6">商談単価の安さ（平均1万円以下）</span></label>
-          <label style="display:flex;align-items:flex-start;gap:10px;border:1.5px solid #D8E6F8;border-radius:10px;padding:13px 14px;cursor:pointer;background:#fff"><input type="checkbox" style="accent-color:#1D5FD2;width:17px;height:17px;margin:1px 0 0;flex-shrink:0"><span style="font-size:13px;font-weight:500;line-height:1.6">決裁者限定プラットフォームである点</span></label>
-          <label style="display:flex;align-items:flex-start;gap:10px;border:1.5px solid #D8E6F8;border-radius:10px;padding:13px 14px;cursor:pointer;background:#fff"><input type="checkbox" style="accent-color:#1D5FD2;width:17px;height:17px;margin:1px 0 0;flex-shrink:0"><span style="font-size:13px;font-weight:500;line-height:1.6">“すごい”交流会など独自の機能</span></label>
-          <label style="display:flex;align-items:flex-start;gap:10px;border:1.5px solid #D8E6F8;border-radius:10px;padding:13px 14px;cursor:pointer;background:#fff"><input type="checkbox" style="accent-color:#1D5FD2;width:17px;height:17px;margin:1px 0 0;flex-shrink:0"><span style="font-size:13px;font-weight:500;line-height:1.6">導入企業の実績・成果</span></label>
-        </div>
+        <select class="form-select" name="interest_point" required>
+          <option value="" disabled selected>選択してください</option>
+          <option value="課題・予算がわかった状態で商談できる点">課題・予算がわかった状態で商談できる点</option>
+          <option value="商談単価の安さ（平均1万円以下）">商談単価の安さ（平均1万円以下）</option>
+          <option value="決裁者限定プラットフォームである点">決裁者限定プラットフォームである点</option>
+          <option value="“すごい”交流会など独自の機能">“すごい”交流会など独自の機能</option>
+          <option value="導入企業の実績・成果">導入企業の実績・成果</option>
+        </select>
       </div>
 
       <div>

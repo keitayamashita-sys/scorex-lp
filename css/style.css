@@ -12,3 +12,15 @@ a.cta:hover{transform:translateY(-2px);}
 input:focus,select:focus{border-color:#1D5FD2 !important;outline:none;background:#fff !important;}
 /* フォーム選択肢のホバー */
 label:hover{border-color:#1D5FD2 !important;background:#F9FBFE !important;}
+/* プルダウン（現在の課題／興味を持ったポイント） */
+select.form-select{
+  width:100%;box-sizing:border-box;
+  border:1.5px solid #D8E6F8;border-radius:10px;
+  padding:14px 40px 14px 14px;
+  font-size:14px;font-family:inherit;font-weight:500;
+  color:#1E2B45;background-color:#F8FBFF;
+  -webkit-appearance:none;appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2012%208'%3E%3Cpath%20d='M1%201l5%205%205-5'%20stroke='%231D5FD2'%20stroke-width='2'%20fill='none'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;background-size:12px 8px;
+}
+select.form-select:invalid{color:#8A97B0;}
