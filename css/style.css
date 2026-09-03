@@ -1,6 +1,9 @@
 /* SCORE X LP 共通スタイル */
 html,body{margin:0;padding:0;background:#F0EBDB;}
-body{font-family:'Noto Sans JP',sans-serif;-webkit-font-smoothing:antialiased;color:#1E2B45;}
+body{font-family:'Noto Sans JP',sans-serif;-webkit-font-smoothing:antialiased;color:#1E2B45;letter-spacing:0.01em;}
+p{font-weight:500;}
+strong{font-weight:900;}
+h1,h2,h3{letter-spacing:0.01em;}
 a{color:#1D5FD2;text-decoration:none;}
 a:hover{color:#123A7B;}
 input::placeholder{color:#AAB6CC;}
