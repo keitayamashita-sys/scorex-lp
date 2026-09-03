@@ -1,0 +1,14 @@
+/* SCORE X LP 共通スタイル */
+html,body{margin:0;padding:0;background:#F0EBDB;}
+body{font-family:'Noto Sans JP',sans-serif;-webkit-font-smoothing:antialiased;color:#1E2B45;}
+a{color:#1D5FD2;text-decoration:none;}
+a:hover{color:#123A7B;}
+input::placeholder{color:#AAB6CC;}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* CTAボタンのホバー */
+a.cta{transition:transform .2s ease;}
+a.cta:hover{transform:translateY(-2px);}
+/* フォーム入力のフォーカス */
+input:focus,select:focus{border-color:#1D5FD2 !important;outline:none;background:#fff !important;}
+/* フォーム選択肢のホバー */
+label:hover{border-color:#1D5FD2 !important;background:#F9FBFE !important;}
