@@ -35,4 +35,24 @@ document.addEventListener('DOMContentLoaded', function () {
       b.remove();
     });
   });
+
+  // 追従CTA：FVを通過してから表示
+  var fv = document.getElementById('fv');
+  var sticky = document.getElementById('stickyCta');
+  if (fv && sticky) {
+    var toggle = function (show) {
+      sticky.style.opacity = show ? '1' : '0';
+      sticky.style.visibility = show ? 'visible' : 'hidden';
+      sticky.style.transform = show ? 'translateY(0)' : 'translateY(12px)';
+    };
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { toggle(!e.isIntersecting); });
+      }, { threshold: 0 }).observe(fv);
+    } else {
+      window.addEventListener('scroll', function () {
+        toggle(window.scrollY > fv.offsetHeight);
+      }, { passive: true });
+    }
+  }
 });
