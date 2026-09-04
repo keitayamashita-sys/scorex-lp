@@ -42,7 +42,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div style="padding:28px 20px 48px">
-    <div style="display:flex;flex-direction:column;gap:26px">
+    <form id="contactForm" style="display:flex;flex-direction:column;gap:26px">
 
       <div>
         <p style="margin:0 0 12px;font-size:15px;font-weight:900;color:#123A7B;letter-spacing:0.01em"><span style="color:#1D5FD2;margin-right:4px">*</span>現在の課題<span style="margin-left:8px;font-size:10px;font-weight:700;color:#fff;background:#1D5FD2;border-radius:4px;padding:2px 7px;vertical-align:2px">必須</span></p>
@@ -70,15 +70,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div>
         <p style="margin:0 0 8px;font-size:15px;font-weight:900;color:#123A7B;letter-spacing:0.01em"><span style="color:#1D5FD2;margin-right:4px">*</span>会社名<span style="margin-left:8px;font-size:10px;font-weight:700;color:#fff;background:#1D5FD2;border-radius:4px;padding:2px 7px;vertical-align:2px">必須</span></p>
-        <input type="text" placeholder="株式会社◯◯" style="width:100%;box-sizing:border-box;border:1.5px solid #D8E6F8;border-radius:10px;padding:14px;font-size:14px;font-family:inherit;background:#F8FBFF">
+        <input type="text" name="company" required placeholder="株式会社◯◯" style="width:100%;box-sizing:border-box;border:1.5px solid #D8E6F8;border-radius:10px;padding:14px;font-size:14px;font-family:inherit;background:#F8FBFF">
       </div>
       <div>
         <p style="margin:0 0 8px;font-size:15px;font-weight:900;color:#123A7B;letter-spacing:0.01em"><span style="color:#1D5FD2;margin-right:4px">*</span>お名前<span style="margin-left:8px;font-size:10px;font-weight:700;color:#fff;background:#1D5FD2;border-radius:4px;padding:2px 7px;vertical-align:2px">必須</span></p>
-        <input type="text" placeholder="山田 太郎" style="width:100%;box-sizing:border-box;border:1.5px solid #D8E6F8;border-radius:10px;padding:14px;font-size:14px;font-family:inherit;background:#F8FBFF">
+        <input type="text" name="fullname" required placeholder="山田 太郎" style="width:100%;box-sizing:border-box;border:1.5px solid #D8E6F8;border-radius:10px;padding:14px;font-size:14px;font-family:inherit;background:#F8FBFF">
       </div>
       <div>
         <p style="margin:0 0 8px;font-size:15px;font-weight:900;color:#123A7B;letter-spacing:0.01em"><span style="color:#1D5FD2;margin-right:4px">*</span>役職<span style="margin-left:8px;font-size:10px;font-weight:700;color:#fff;background:#1D5FD2;border-radius:4px;padding:2px 7px;vertical-align:2px">必須</span></p>
-        <select style="width:100%;box-sizing:border-box;border:1.5px solid #D8E6F8;border-radius:10px;padding:14px;font-size:14px;font-family:inherit;background:#F8FBFF;color:#1E2B45;appearance:auto">
+        <select name="position" required style="width:100%;box-sizing:border-box;border:1.5px solid #D8E6F8;border-radius:10px;padding:14px;font-size:14px;font-family:inherit;background:#F8FBFF;color:#1E2B45;appearance:auto">
           <option value="">選択してください</option>
           <option value="代表取締役">代表取締役</option>
           <option value="取締役">取締役</option>
@@ -88,21 +88,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div>
         <p style="margin:0 0 8px;font-size:15px;font-weight:900;color:#123A7B;letter-spacing:0.01em"><span style="color:#1D5FD2;margin-right:4px">*</span>メールアドレス<span style="margin-left:8px;font-size:10px;font-weight:700;color:#fff;background:#1D5FD2;border-radius:4px;padding:2px 7px;vertical-align:2px">必須</span></p>
-        <input type="email" placeholder="taro@example.co.jp" style="width:100%;box-sizing:border-box;border:1.5px solid #D8E6F8;border-radius:10px;padding:14px;font-size:14px;font-family:inherit;background:#F8FBFF">
+        <input type="email" name="email" required placeholder="taro@example.co.jp" style="width:100%;box-sizing:border-box;border:1.5px solid #D8E6F8;border-radius:10px;padding:14px;font-size:14px;font-family:inherit;background:#F8FBFF">
         <p style="margin:8px 0 0;font-size:11px;line-height:1.7;color:#6E7C99">※こちらのアドレスへ資料をお送りします。キャリアメール（docomo・au・softbank）は受信できない場合があるため、会社・PCのメールアドレスを推奨します。</p>
       </div>
       <div>
         <p style="margin:0 0 8px;font-size:15px;font-weight:900;color:#123A7B;letter-spacing:0.01em"><span style="color:#1D5FD2;margin-right:4px">*</span>電話番号<span style="margin-left:8px;font-size:10px;font-weight:700;color:#fff;background:#1D5FD2;border-radius:4px;padding:2px 7px;vertical-align:2px">必須</span></p>
-        <input type="tel" placeholder="09012345678" style="width:100%;box-sizing:border-box;border:1.5px solid #D8E6F8;border-radius:10px;padding:14px;font-size:14px;font-family:inherit;background:#F8FBFF">
+        <input type="tel" name="phone" required placeholder="09012345678" style="width:100%;box-sizing:border-box;border:1.5px solid #D8E6F8;border-radius:10px;padding:14px;font-size:14px;font-family:inherit;background:#F8FBFF">
         <p style="margin:8px 0 0;font-size:11px;line-height:1.7;color:#6E7C99">※ハイフンなしでご入力いただけます。</p>
       </div>
 
         <div style="position:relative;margin-top:24px">
-          <span style="position:absolute;top:0;left:50%;transform:translate(-50%,-50%);z-index:2;display:inline-block;background:#0B2D66;color:#FFD24A;font-size:12.5px;font-weight:900;letter-spacing:0.04em;padding:5px 15px;border-radius:6px;box-shadow:0 3px 10px rgba(6,26,66,0.45);white-space:nowrap">＼ 簡単30秒 ／</span>
-        <a href="thanks.html" style="display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(100deg,#FFE68F 0%,#FFD24A 42%,#FFB01F 100%);color:#0B2D66;font-size:17px;font-weight:900;letter-spacing:0.01em;padding:19px 22px;border-radius:100px;box-shadow:0 10px 26px rgba(255,168,10,0.5),0 3px 10px rgba(6,26,66,0.22),inset 0 1px 0 rgba(255,255,255,0.6)" class="cta">無料で資料を受け取る<span style="display:inline-flex;width:24px;height:24px;border-radius:50%;background:#0B2D66;color:#FFD24A;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0">→</span></a>
+          <span style="position:absolute;top:0;left:50%;transform:translate(-50%,-50%);z-index:2;display:inline-block;background:#fff;color:#123A7B;border:2px solid #123A7B;font-size:12.5px;font-weight:900;letter-spacing:0.03em;padding:5px 15px;border-radius:6px;box-shadow:0 3px 10px rgba(6,26,66,0.25);white-space:nowrap">＼ 30秒で入力完了 ／</span>
+        <button type="submit" id="submitBtn" style="display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(100deg,#FFE68F 0%,#FFD24A 42%,#FFB01F 100%);color:#0B2D66;font-size:17px;font-weight:900;letter-spacing:0.01em;padding:19px 22px;border-radius:100px;box-shadow:0 10px 26px rgba(255,168,10,0.5),0 3px 10px rgba(6,26,66,0.22),inset 0 1px 0 rgba(255,255,255,0.6);width:100%;border:none;cursor:pointer;font-family:inherit" class="cta">無料で資料を受け取る<span style="display:inline-flex;width:24px;height:24px;border-radius:50%;background:#0B2D66;color:#FFD24A;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0">→</span></button>
       </div>
       <p style="margin:-14px 0 0;text-align:center;font-size:10.5px;color:#6E7C99">送信により<a href="https://scorex.co.jp/privacy.html" target="_blank" rel="noopener" style="text-decoration:underline">プライバシーポリシー</a>に同意したものとみなされます</p>
-    </div>
+      <p id="formMsg" style="display:none;margin:-10px 0 0;text-align:center;font-size:12.5px;font-weight:700;line-height:1.7"></p>
+    </form>
   </div>
 
   <footer style="background:linear-gradient(160deg,#123A7B,#0B2D66);color:#fff;padding:24px 20px;text-align:center">
@@ -110,5 +111,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
 </div>
 <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+(function () {
+  var SERVICE_ID  = 'service_cttl2qh';
+  var TEMPLATE_ID = 'template_84bb135';
+  var PUBLIC_KEY  = 'TX_KFbsW1okMDiaFK';
+
+  emailjs.init({ publicKey: PUBLIC_KEY });
+
+  var form = document.getElementById('contactForm');
+  var btn  = document.getElementById('submitBtn');
+  var msg  = document.getElementById('formMsg');
+  if (!form || !btn) return;
+
+  function show(text, ok) {
+    msg.textContent = text;
+    msg.style.color = ok ? '#1D5FD2' : '#C0392B';
+    msg.style.display = 'block';
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+
+    var label = btn.innerHTML;
+    btn.disabled = true;
+    btn.style.opacity = '0.6';
+    btn.style.pointerEvents = 'none';
+    btn.innerHTML = '送信中…';
+    msg.style.display = 'none';
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form)
+      .then(function () {
+        location.href = 'thanks.html';
+      })
+      .catch(function (err) {
+        console.error('EmailJS error:', err);
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        btn.style.pointerEvents = 'auto';
+        btn.innerHTML = label;
+        show('送信に失敗しました。時間をおいて再度お試しください。', false);
+      });
+  });
+})();
+</script>
 </body>
 </html>
