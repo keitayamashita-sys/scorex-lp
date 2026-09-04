@@ -1,5 +1,33 @@
 // SCORE X LP 共通スクリプト
 document.addEventListener('DOMContentLoaded', function () {
+  // ===== UTMパラメータの保持と引き継ぎ（Meta広告の判別用） =====
+  var UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid', 'gclid'];
+  var utm = {};
+  try { utm = JSON.parse(sessionStorage.getItem('scx_utm') || '{}'); } catch (e) { utm = {}; }
+  var params = new URLSearchParams(window.location.search);
+  var found = false;
+  UTM_KEYS.forEach(function (k) {
+    var v = params.get(k);
+    if (v) { utm[k] = v; found = true; }
+  });
+  // 最初に着地したURL（広告からの流入URL）を記録
+  if (found || !utm.landing_url) utm.landing_url = window.location.href;
+  try { sessionStorage.setItem('scx_utm', JSON.stringify(utm)); } catch (e) {}
+  window.SCX_UTM = utm;
+
+  // サイト内リンクにUTMを引き継ぐ（LP → フォーム → サンクス）
+  var qs = [];
+  UTM_KEYS.forEach(function (k) {
+    if (utm[k]) qs.push(k + '=' + encodeURIComponent(utm[k]));
+  });
+  if (qs.length) {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      var h = a.getAttribute('href');
+      if (!h || /^(https?:|mailto:|tel:|#|javascript:)/i.test(h)) return;
+      a.setAttribute('href', h + (h.indexOf('?') >= 0 ? '&' : '?') + qs.join('&'));
+    });
+  }
+
   // ハンバーガーメニュー
   var btn = document.getElementById('menuBtn');
   var menu = document.getElementById('mobileMenu');
