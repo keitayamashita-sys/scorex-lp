@@ -1,0 +1,13 @@
+【お問い合わせ内容】
+会社名：{{company}}
+お名前：{{fullname}}
+役職：{{position}}
+メール：{{email}}
+電話：{{phone}}
+
+【ヒアリング】
+現在の課題：{{current_issue}}
+興味を持ったポイント：{{interest_point}}
+
+【送信元】
+ページURL：{{page_url}}
